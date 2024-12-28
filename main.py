@@ -25,9 +25,9 @@ def hello_world2():
 @app.route("/cbc")
 def helloworld3():
     return f'<p>{random.choice(facts_list)}</p>'
-@app.route("/yazi_tura")
-def helloworld4():
-    return f"<p>{random.choice(yazi_tura)}</p>"
+@app.route("/<xyz>")
+def ronaldo(xyz):
+    return f"<p>{int(xyz)*2}</p>"
 
 
 
